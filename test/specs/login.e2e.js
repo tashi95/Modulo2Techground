@@ -23,11 +23,15 @@ describe('My Login application', () => {
 
         it ('should open the global tap',()=>
         {
+        
             DashboardPage.getGlobalFeedTap().click();
+            browser.pause(10000);
+            console.log('HOLA SIZE ' + DashboardPage.getArticleList().lenght);
            
          expect(DashboardPage.getGlobalFeedTap()).toHaveClass('active',{message:'Not active tap!'});
-         expect(DashboardPage.getGlobalFeedTap()).toHaveProperty('height',42);
+         //expect(DashboardPage.getGlobalFeedTap()).toHaveProperty('height',42);
          expect(DashboardPage.getGlobalFeedTap()).toBeClickable();
+         expect(DashboardPage.getArticleList()).toBeElementsArrayOfSize({eq:10});
         // expect(DashboardPage.getGlobalFeedTap()).toBeSelected(); para checkbox
         // expect(DashboardPage.getYourFeed()).toHaveAttribute('class','nav-link active')
 
