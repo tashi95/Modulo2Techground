@@ -9,6 +9,7 @@ class dashboardPage extends Page {
     get yourFeedTap(){return $('.nav-link=Your Feed')}
     get globalFeedTap(){return $('.nav-link=Global Feed')}
     get articlesRows(){return $('<article-list />').$$('<article-preview />')}
+    get articlesRowsReadMore(){return $('<article-list />').$$('<article-preview />')[1].$('span=Read more...')}
 
     getNoArticlesLabel()
     {
@@ -25,6 +26,10 @@ class dashboardPage extends Page {
     getArticleList()
     {
         return this.articlesRows;
+    }
+    getReadMoreAnchor()
+    {
+        return this.articlesRowsReadMore;
     }
 
 }
