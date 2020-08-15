@@ -1,13 +1,11 @@
 const LoginPage = require('../pageobjects/login.page');
 const NavigationPage= require('../pageobjects/navigation.page');
 const DashboardPage= require('../pageobjects/dashboard.page');
-<<<<<<< HEAD
+
 const ArticleDetail= require('../pageobjects/articleDetail.page');
 const wait= require('../helpers/waits');
-=======
 const user= require('../data/users');
 const loginPage = require('../pageobjects/login.page');
->>>>>>> clase8
 
 
 describe('My Login application', () => {
