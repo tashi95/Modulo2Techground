@@ -13,6 +13,7 @@ class dashboardPage extends Page {
     getNoArticlesLabel()
     {
         return this.noArticleslabel;
+        
     }
     getYourFeed()
     {
